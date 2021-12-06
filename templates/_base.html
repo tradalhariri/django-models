@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}  {% endblock %}</title>
+</head>
+<style>
+    * {
+  padding:0;
+  margin:0;
+  list-style-type:none;
+  font-family:arial;
+}
+body{
+  background:#ccc;
+}
+.container{
+  background:#fff;
+  width:600px;
+  margin:50px auto;
+  
+}
+.container .header{
+  width:100%;
+  background:black;
+  height:70px; 
+}
+.header h1 {
+  color:#fff;
+  font-size:20px;
+  line-height:70px;
+  margin: 0 20px;
+}
+.container ul li {
+ padding:30px;
+ border-bottom:1px solid #ccc;
+}
+
+ul li h1 {
+  margin-left:50px;
+  margin-top:-20px;
+  font-size:17px;
+  font-weight:550;
+}
+ul li h2 {
+  margin-left:50px;
+  margin-top:20px;
+  font-size:17px;
+  font-weight:550;
+}
+ul li p {
+  margin-left:50px;
+  margin-top:0px;
+}
+ul li:hover {
+  background:gray;
+}
+
+td{
+    padding: 20px;
+}
+</style>
+<body>
+
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>
