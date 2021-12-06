@@ -1,0 +1,33 @@
+{% extends "_base.html" %}
+{% block title %} Snack Detail {% endblock %}
+
+{% block content %} 
+<div class="container">
+    <div class="header">
+      <h1>Snack Detail</h1>
+    </h1>
+    </div>
+    
+  <table >
+      <thead>
+    <tr >
+      <th>Name</th>
+      <th>Purchaser</th>
+      <th>Description</th>
+    </tr>
+</thead>
+<tbody>
+    <tr >
+      <td>{{snack.name}}</td>
+      <td> {{snack.purchaser}} </td>
+      <td>{{snack.description}}</td>
+    </tr>
+</thead>
+  </table> 
+  <a  href = "{% url 'snack_list' %}">
+    <h1>Back to the snack list</h1>
+  </a>
+
+</div> 
+
+{% endblock %}
